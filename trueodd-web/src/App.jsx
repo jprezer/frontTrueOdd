@@ -315,7 +315,7 @@ export default function App() {
 
             {/* ODD */}
             <div>
-              <label className="text-xs font-semibold text-gray-500 uppercase mb-1 block pl-1">Odd Superbet</label>
+              <label className="text-xs font-semibold text-gray-500 uppercase mb-1 block pl-1">Odd da Casa</label>
               <div className="relative">
                 <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 font-bold">
                   {isLocked ? <Lock className="w-4 h-4" /> : '@'}
@@ -377,7 +377,7 @@ export default function App() {
               <div className="grid grid-cols-2 gap-4">
                 <StatBox label="Probabilidade Real" value={`${resultado.probabilidadeCasa}%`} subtext="Cálculo Poisson" color="text-blue-600" />
                 <StatBox label="Odd Justa (Fair)" value={resultado.oddJustaCasa} subtext="Preço correto" />
-                <StatBox label="Odd Superbet" value={resultado.oddCasaApostas} subtext="Preço atual" color={resultado.valorEsperado > 0 ? "text-green-600" : "text-gray-900"} />
+                <StatBox label="Odd da Casa" value={resultado.oddCasaApostas} subtext="Preço atual" color={resultado.valorEsperado > 0 ? "text-green-600" : "text-gray-900"} />
                 <div className="flex flex-col items-center justify-center p-3 bg-gray-50 rounded-xl border border-dashed border-gray-200">
                   <span className="text-xs font-medium text-gray-400 uppercase">Odd Visitante</span>
                   <span className="text-lg font-semibold text-gray-500">{resultado.oddJustaFora}</span>
